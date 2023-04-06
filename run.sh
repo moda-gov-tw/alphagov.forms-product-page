@@ -1,5 +1,5 @@
-docker run -it \
+docker run -it --rm \
     --name govuk_form_product_page \
     --user root \
-    -v $(PWD)/build:/app/build \
+    -v $(pwd)/build:/app/build \
     govuk-form-product-page sh
